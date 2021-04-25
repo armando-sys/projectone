@@ -1,3 +1,6 @@
+
+import paragraph from "../components/atoms/paragraph";
+
 export default function test (){
-    return "Hello Armando from next.js";
+    return <paragraph />;
 }
