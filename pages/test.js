@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AtomText from "../components/atoms/paragraph";
-import AtomButton from "../components/atoms/Button"
+import AtomButton from "../components/atoms/button"
 
 export default function test() {
     return (
