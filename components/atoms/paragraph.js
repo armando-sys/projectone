@@ -1,5 +1,17 @@
 
-export default function AtomText({ value, size, fontFamily, color, margin, customClass, padding, weight, width, variant, align }) {
+export default function AtomText({ value,
+    size,
+    fontFamily,
+    color,
+    margin,
+    customClass,
+    padding,
+    weight,
+    width,
+    variant,
+    align,
+    lineHeight
+}) {
     return (
         <>
             <p
@@ -14,6 +26,7 @@ export default function AtomText({ value, size, fontFamily, color, margin, custo
                     weight: weight,
                     width: width,
                     textAlign: align,
+                    lineHeight: lineHeight,
 
                 }}>
                 {value}

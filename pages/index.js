@@ -92,6 +92,7 @@ export default function test() {
               padding="10px 10px 10px 10px"
               shadow="0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15)"
               fontFamily="Roboto"
+              lineHeight="30px"
 
             />
             <AtomButton value="Read More"
