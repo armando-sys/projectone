@@ -23,8 +23,8 @@ export default function test() {
                     <Nav.Link className="text-light" href="#pricing">About Us</Nav.Link>
                 </Nav>
                 <Form inline>
-                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-light">Search</Button>
+                    <img src="/homepage/cart.png" style={{ marginRight: "30px" }} />
+                    <img src="/homepage/user.png" style={{ marginRight: "100px" }} />
                 </Form>
             </Navbar>
 
