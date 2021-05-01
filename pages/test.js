@@ -13,8 +13,8 @@ export default function test() {
                             value="Next.JS Framework"
                             fontFamily="Roboto"
                             size="20px"
-                            margin="10px 0px 0px 0px"
                             padding="10px"
+                            margin="0 0 0 0"
                         />
 
                         <AtomText
@@ -23,6 +23,7 @@ export default function test() {
                             size="12px"
                             align="justify"
                             padding="10px"
+                            margin="0px"
                         />
                     </div>
                     <div className="col-6 text-left">
@@ -30,8 +31,8 @@ export default function test() {
                             value="Framework Laravel"
                             fontFamily="Roboto"
                             size="20px"
-                            margin="10px 0px 0px 0px"
                             padding="10px"
+                            margin="0 0 0 0"
                         />
 
                         <AtomText
@@ -40,6 +41,7 @@ export default function test() {
                             size="12px"
                             align="justify"
                             padding="10px"
+                            margin="0px"
                         />
                     </div>
                     <div className="col-12">
@@ -64,7 +66,7 @@ export default function test() {
                             padding="0px"
                             align="justify"
                             margin="0px"
-                            padding="0px 10px 10px 10px"
+                            padding="10px 10px 10px 10px"
                             shadow="0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.15)"
                             fontFamily="Roboto"
 
