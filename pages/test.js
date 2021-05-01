@@ -1,10 +1,33 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import AtomText from "../components/atoms/paragraph";
-import AtomButton from "../components/atoms/button"
+import AtomButton from "../components/atoms/button";
 
 export default function test() {
     return (
         <>
+
+            <Navbar bg="primary" variant="light">
+                <Navbar.Brand href="#home">
+                    <img src="/homepage/nav_logo.png"
+                        style={{
+                            width: "50px",
+                            margin: "0 0 0 100px",
+                            filter: "drop-shadow(1px 1px 1px #666666)",
+                        }} />
+                </Navbar.Brand>
+                <Nav className="mr-auto">
+                    <Nav.Link className="text-light" href="#home">Trend</Nav.Link>
+                    <Nav.Link className="text-light" href="#features">Explore</Nav.Link>
+                    <Nav.Link className="text-light" href="#pricing">Collection</Nav.Link>
+                    <Nav.Link className="text-light" href="#pricing">About Us</Nav.Link>
+                </Nav>
+                <Form inline>
+                    <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                    <Button variant="outline-light">Search</Button>
+                </Form>
+            </Navbar>
+
             <div className="container mt-4">
                 <div className="templateBox row">
 
@@ -73,20 +96,27 @@ export default function test() {
                         />
                         <AtomButton value="Read More"
                             background="blue"
-                            border="none"
+                            border="1px solid"
                             padding="10px 20px"
                             margin="10px 0 20px 10px"
                             color="white"
                             radius="10px"
+                            float="right"
+                            variant="outline-light"
+
+
                         />
-                        <AtomButton value="Learn More"
+                        <AtomButton
+                            value="Learn More"
                             background="Green"
                             border="none"
                             padding="10px 20px"
                             margin="10px 0 20px 20px"
                             color="white"
                             radius="10px"
+                            float="right"
                         />
+
                     </div>
                 </div>
             </div>

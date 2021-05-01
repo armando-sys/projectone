@@ -1,5 +1,5 @@
 
-export default function AtomButton({ customClass, value, margin, padding, background, color, border, radius, shadow }) {
+export default function AtomButton({ customClass, value, margin, padding, background, color, border, radius, shadow, float, variant }) {
     return (<button
         className={customClass} style={{
             background: background,
@@ -9,6 +9,8 @@ export default function AtomButton({ customClass, value, margin, padding, backgr
             border: border,
             borderRadius: radius,
             boxShadow: shadow,
+            float: float,
+            variant: variant,
         }}>{value}
     </button>
     );
