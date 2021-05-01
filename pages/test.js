@@ -85,6 +85,15 @@ export default function test() {
                             color="white"
                             radius="10px"
                         />
+
+                        <AtomButton value="Learn More"
+                            background="Green"
+                            border="none"
+                            padding="10px 20px"
+                            margin="10px 0 20px 20px"
+                            color="white"
+                            radius="10px"
+                        />
                     </div>
                 </div>
             </div>
