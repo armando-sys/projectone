@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import AtomText from "../components/atoms/paragraph";
 import AtomButton from "../components/atoms/button";
+import MoleculeProduct from "../components/moleculs/product_list";
 
 export default function test() {
   return (
@@ -59,6 +60,21 @@ export default function test() {
           </div>
           <div className="col-md-6">
             <img src="/homepage/beranda.png" />
+          </div>
+        </div>
+        <div className="mt-5" style={{
+          width: "100%",
+          height: "500px",
+          background: "#F9F9F9"
+        }}>
+          <div className="row container">
+            <div className="col-12 text-left pt-5">
+              <AtomText value="Forever Bag" weight="bold" size="24px" lineHeight="30px" />
+            </div>
+            <div className="col-3"><MoleculeProduct /></div>
+            <div className="col-3"><MoleculeProduct /></div>
+            <div className="col-3"><MoleculeProduct /></div>
+            <div className="col-3"><MoleculeProduct /></div>
           </div>
         </div>
       </center>
