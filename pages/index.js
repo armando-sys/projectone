@@ -3,8 +3,10 @@ import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import AtomText from "../components/atoms/paragraph";
 import AtomButton from "../components/atoms/button";
 import MoleculeProduct from "../components/moleculs/product_list";
+import { list_product } from "../components/variables/list_product";
 
 export default function test() {
+  let products = list_product()
   return (
     <>
       <Navbar bg="primary" variant="light">
@@ -71,10 +73,17 @@ export default function test() {
             <div className="col-12 text-left pt-5">
               <AtomText value="Forever Bag" weight="bold" size="24px" lineHeight="30px" />
             </div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
+            {products.map(product => {
+              return (<>
+                <div className="col-3"><MoleculeProduct
+                  image={product.image[0]}
+                  title={product.title}
+                  category={product.category}
+                  price={product.price}
+                />
+                </div>
+              </>);
+            })}
           </div>
         </div>
       </center>
