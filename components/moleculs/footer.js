@@ -16,7 +16,7 @@ export default function footer() {
                     size="14px"
                     margin="5px 0 0 250px"
                 />
-                <AtomText value="Email : bps8100@bps.go.id, Homepage: https://maluku.bps.go.id"
+                <AtomText value="Email : bps8100@bps.go.id Homepage: https://maluku.bps.go.id"
                     size="14px"
                     margin="5px 0 20px 250px"
                 />
