@@ -8,16 +8,25 @@ export default function product_list() {
             <AtomText value="Lavonte #A1294"
                 size="14px"
                 weight="bold"
-                lineHeight="30px"
                 fontFamily="Roboto"
-                margin="20px 0 0 0"
+                margin="30px 0 0 0"
             />
-            <AtomText value="Lavonte #A1294"
-                size="14px"
-                weight="bold"
-                lineHeight="30px"
+            <AtomText value="Forever Shoes"
+                size="10px"
                 fontFamily="Roboto"
             />
+            <div className="row">
+                <div className="col-8">
+                    <AtomText value="$125.00"
+                        size="18px"
+                        weight="bold"
+                        fontFamily="Roboto"
+                    /></div>
+                <div className="col-4">
+                    <img src="/product/cart.png" />
+                </div>
+            </div>
+
         </div>
 
     </>);
