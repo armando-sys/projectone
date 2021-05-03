@@ -3,6 +3,7 @@ import AtomText from "../components/atoms/paragraph";
 import AtomButton from "../components/atoms/button";
 import MoleculNavbar from "../components/moleculs/navbar";
 import MoleculeProduct from "../components/moleculs/product_list";
+import MoleculeFooter from "../components/moleculs/footer";
 import { list_product } from "../components/variables/list_product";
 
 export default function test() {
@@ -68,6 +69,7 @@ export default function test() {
           </div>
         </div>
       </center>
+      <MoleculeFooter />
     </>
   )
 }
