@@ -1,23 +1,32 @@
 import AtomText from "../atoms/paragraph"
 
-export default function product_list() {
+export default function product_list({ image, title, category, price, id }) {
     return (<>
 
         <div className="templateListProduct mt-3 text-left" style={{ padding: "20px" }}>
-            <img src="/product/product_1.png" />
-            <AtomText value="Lavonte #A1294"
+            <img src={image} style={{ width: "150px", height: "150px" }} />
+            <AtomText value={title}
                 size="14px"
                 weight="bold"
-                lineHeight="30px"
                 fontFamily="Roboto"
-                margin="20px 0 0 0"
+                margin="30px 0 0 0"
             />
-            <AtomText value="Lavonte #A1294"
-                size="14px"
-                weight="bold"
-                lineHeight="30px"
+            <AtomText value={category}
+                size="10px"
                 fontFamily="Roboto"
             />
+            <div className="row">
+                <div className="col-8">
+                    <AtomText value={price}
+                        size="18px"
+                        weight="bold"
+                        fontFamily="Roboto"
+                    /></div>
+                <div className="col-4">
+                    <img src="/product/cart.png" />
+                </div>
+            </div>
+
         </div>
 
     </>);

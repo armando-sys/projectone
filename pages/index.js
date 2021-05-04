@@ -1,32 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import AtomText from "../components/atoms/paragraph";
 import AtomButton from "../components/atoms/button";
+import MoleculNavbar from "../components/moleculs/navbar";
 import MoleculeProduct from "../components/moleculs/product_list";
+import MoleculeFooter from "../components/moleculs/footer";
+import { list_product } from "../components/variables/list_product";
 
 export default function test() {
+  let products = list_product()
   return (
     <>
-      <Navbar bg="primary" variant="light">
-        <Navbar.Brand href="#home">
-          <img src="/homepage/nav_logo.png"
-            style={{
-              width: "50px",
-              margin: "0 0 0 100px",
-              filter: "drop-shadow(1px 1px 1px #666666)",
-            }} />
-        </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Nav.Link className="text-light" href="#home">Trend</Nav.Link>
-          <Nav.Link className="text-light" href="#features">Explore</Nav.Link>
-          <Nav.Link className="text-light" href="#pricing">Collection</Nav.Link>
-          <Nav.Link className="text-light" href="#pricing">About Us</Nav.Link>
-        </Nav>
-        <Form inline>
-          <img src="/homepage/cart.png" style={{ marginRight: "30px" }} />
-          <img src="/homepage/user.png" style={{ marginRight: "100px" }} />
-        </Form>
-      </Navbar>
+      <MoleculNavbar />
       <center>
         <div className="row container mt-5">
           <div className="col-md-6 text-left">
@@ -71,13 +55,21 @@ export default function test() {
             <div className="col-12 text-left pt-5">
               <AtomText value="Forever Bag" weight="bold" size="24px" lineHeight="30px" />
             </div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
-            <div className="col-3"><MoleculeProduct /></div>
+            {products.map(product => {
+              return (<>
+                <div className="col-3"><MoleculeProduct
+                  image={product.image[0]}
+                  title={product.title}
+                  category={product.category}
+                  price={product.price}
+                />
+                </div>
+              </>);
+            })}
           </div>
         </div>
       </center>
+      <MoleculeFooter />
     </>
   )
 }
