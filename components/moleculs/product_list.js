@@ -3,8 +3,10 @@ import AtomText from "../atoms/paragraph"
 export default function product_list({ image, title, category, price, id }) {
     return (<>
 
-        <div className="templateListProduct mt-3 text-left" style={{ padding: "20px" }}>
-            <img src={image} style={{ width: "150px", height: "150px" }} />
+        <div className="templateListProduct mt-3 text-left"
+            style={{ padding: "20px" }}>
+            <div style={{ background: "#dedede", height: "150px" }}></div>
+
             <AtomText value={title}
                 size="14px"
                 weight="bold"
