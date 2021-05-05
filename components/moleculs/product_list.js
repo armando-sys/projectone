@@ -5,7 +5,7 @@ export default function product_list({ image, title, category, price, id }) {
 
         <div className="templateListProduct mt-3 text-left"
             style={{ padding: "20px" }}>
-            <div style={{ background: "#dedede", height: "150px" }}></div>
+            <div style={{ background: "#dedede", height: "150px", background: `url(${image})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></div>
 
             <AtomText value={title}
                 size="14px"
