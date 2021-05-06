@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AtomText from "../components/atoms/paragraph";
 import AtomButton from "../components/atoms/button";
-import MoleculNavbar from "../components/moleculs/navbar";
+import OrganismsNav from "../components/organisms/navbar";
 import MoleculeProduct from "../components/moleculs/product_list";
 import MoleculeFooter from "../components/moleculs/footer";
 import { list_product } from "../components/variables/list_product";
@@ -10,7 +10,7 @@ export default function test() {
   let products = list_product()
   return (
     <>
-      <MoleculNavbar />
+      <OrganismsNav />
       <center>
         <div className="row container mt-5">
           <div className="col-md-6 text-left">
