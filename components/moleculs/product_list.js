@@ -1,11 +1,21 @@
-import AtomText from "../atoms/paragraph"
+import AtomText from "../atoms/paragraph";
+import AtomImage from "../atoms/image";
+
 
 export default function product_list({ image, title, category, price, id }) {
     return (<>
 
         <div className="templateListProduct mt-3 text-left"
             style={{ padding: "20px" }}>
-            <div style={{ background: "#dedede", height: "150px", background: `url(${image})`, backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center" }}></div>
+
+            <AtomImage
+                image={image}
+                background="#dedede"
+                height="150px"
+                size="contain"
+                repeat="no-repeat"
+                position="center"
+            />
 
             <AtomText value={title}
                 size="14px"

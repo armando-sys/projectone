@@ -1,14 +1,22 @@
-
-export default function AtomImage({ src, width, height }) {
+export default function image({
+    image,
+    background,
+    height,
+    width,
+    size,
+    repeat,
+    position,
+}) {
     return (
+        <div
+            style={{
 
-        <img style={{
-            src: src,
-            width: width,
-            height: height,
-        }}>
-
-        </img>
-
+                height: height,
+                background: `url(${image})`,
+                backgroundSize: size,
+                backgroundRepeat: repeat,
+                backgroundPosition: position,
+            }}
+        ></div>
     );
 }
