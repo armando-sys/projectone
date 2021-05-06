@@ -12,10 +12,10 @@ export default function detail() {
                 <div className="col">
 
                 </div>
-                <div className="col">
+                <div className="col text-left">
                     <AtomText value="Hamlin Cellyn Tas Ransel Wanita Japan Style Big Compartment"
-                        size="18px"
-                        weight="bold"
+                        size="36px"
+                        weight="700"
                     />
                     <AtomButton value="Add to Cart" />
                 </div>
