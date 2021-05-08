@@ -15,7 +15,7 @@ export default function navbar() {
                 <Nav.Link className="text-light" href="/">Home</Nav.Link>
                 <Nav.Link className="text-light" href="/detail">Detail</Nav.Link>
                 <Nav.Link className="text-light" href="/billing">Billing</Nav.Link>
-                <Nav.Link className="text-light" href="#pricing">About Us</Nav.Link>
+                <Nav.Link className="text-light" href="/about">About Us</Nav.Link>
             </Nav>
             <Form inline>
                 <img src="/homepage/cart.png" style={{ marginRight: "30px" }} />
