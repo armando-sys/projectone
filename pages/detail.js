@@ -1,7 +1,6 @@
 
 import AtomButton from "../components/atoms/button";
 import AtomText from "../components/atoms/paragraph";
-import AtomImage from "../components/atoms/image";
 import OrganismsNav from "../components/organisms/navbar";
 
 

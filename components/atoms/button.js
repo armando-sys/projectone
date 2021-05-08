@@ -1,6 +1,20 @@
 
-export default function AtomButton({ customClass, value, margin, padding, background, color, border, radius, shadow, float, variant }) {
+export default function AtomButton({
+    onClick,
+    customClass,
+    value,
+    margin,
+    padding,
+    background,
+    color,
+    border,
+    radius,
+    shadow,
+    float,
+    variant
+}) {
     return (<button
+        onClick={onClick}
         className={customClass} style={{
             background: background,
             color: color,
