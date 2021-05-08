@@ -12,9 +12,9 @@ export default function navbar() {
                     }} />
             </Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link className="text-light" href="#home">Trend</Nav.Link>
-                <Nav.Link className="text-light" href="#features">Explore</Nav.Link>
-                <Nav.Link className="text-light" href="#pricing">Collection</Nav.Link>
+                <Nav.Link className="text-light" href="/">Home</Nav.Link>
+                <Nav.Link className="text-light" href="/detail">Detail</Nav.Link>
+                <Nav.Link className="text-light" href="/billing">Billing</Nav.Link>
                 <Nav.Link className="text-light" href="#pricing">About Us</Nav.Link>
             </Nav>
             <Form inline>
